@@ -82,6 +82,7 @@ MonoBehaviour:
   speed: 500
   potatoSpawn: {fileID: 8771335374938711042}
   reload: 1
+  animate: {fileID: 10168512}
 --- !u!1 &6149131668148120796
 GameObject:
   m_ObjectHideFlags: 0
