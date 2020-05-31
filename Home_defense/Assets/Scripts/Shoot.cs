@@ -15,10 +15,14 @@ public class Shoot : MonoBehaviour
 
     [SerializeField]
     float reload = 2;
+
+    [SerializeField]
+    Animator animate;
     void Fire(){
         //Debug.Log("Fire!!!");
         GameObject potato = Instantiate(projectile, potatoSpawn.position, Quaternion.identity) as GameObject;
         potato.GetComponent<Rigidbody>().AddForce(potatoSpawn.forward * speed);
+        animate.SetTrigger("reload");
     }
 
     IEnumerator Shooting(){
