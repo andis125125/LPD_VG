@@ -25,9 +25,6 @@ public class Movement : MonoBehaviour
 
         motion += Physics.gravity * Time.deltaTime;
 
-
-
-
         characterController.Move(motion);
     }
 }
